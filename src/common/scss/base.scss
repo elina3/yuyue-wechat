@@ -1,0 +1,17 @@
+@import "./variable.scss";
+
+// rem单位转换
+@function rem($px) {
+  $rem: 37.5px;
+  @return ($px / $rem)*1rem;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback';
+  user-select: none;
+  //这个属性是去掉chorme浏览器有个灰色背景
+  -webkit-tap-highlight-color: transparent;
+  background-color: $background-color;
+}
+  
